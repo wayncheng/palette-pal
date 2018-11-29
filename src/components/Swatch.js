@@ -91,7 +91,7 @@ class Swatch extends Component {
 	render() {
 		let classification = 'dark';
 		let brightness = brightnessByColor(this.props.color);
-		if (brightness > 160) {
+		if (brightness > 200) {
 			classification = 'light';
 		}
 		return (

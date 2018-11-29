@@ -1,6 +1,7 @@
 @import '../config/variables';
-
-
+* {
+	box-sizing: border-box;
+}
 .palette {
 	display: flex;
 	flex-direction: row;
@@ -17,12 +18,15 @@
 	display: flex;
 	justify-content: stretch;
 	align-items: stretch;
-	padding: 1rem .5rem;
+	// padding: .5rem .2rem;
+	padding-top: 3rem;
 	cursor: pointer;
-
-	flex-basis: 25%;
-	@media all and (max-width: 600px){
-		flex-basis: 50%;
+	$n: 6;
+	$pct: 100/$n;
+	flex-basis: 16.66%;
+	@media all and (max-width: 800px){
+		flex-basis: 33%;
+		// padding:0
 	}
 
 
@@ -33,11 +37,13 @@
 		justify-content: center;
 		align-items: center;
 		
-		color: rgba(#fff, 1);
+		min-height: 120px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border-radius: .2em;
-		min-height: 120px;
+		// border-radius: .2em;
+
+		color: #fff;
+
 
 
 		box-shadow: $shadow-1;
@@ -47,14 +53,15 @@
 			box-shadow: $shadow-4;
 		}
 
-		&.dark  { color: rgba(#fff, 1); }
-		&.light { color: rgba(#000, 0.87); }
+		&.dark  { color: #fff; }
+		&.light { color: rgba(#000,0.3); }
 
 		.swatch-id {
+			font-size: 1.3rem;
 			position: absolute;
-			top: .5rem;
-			left: 1rem;
-			line-height: 1;
+			top: -1.5em;
+			left: 5px;
+			color: #000;		
 		}
 		
 		.data {
@@ -63,14 +70,16 @@
 			// left: 50%;
 			// transform: translate(-50%,-4px);
 			line-height: 1;
-			bottom: .5rem;
 			right: .5rem;
+			// bottom: .5rem;
+			top: -1.5em;
+			color: rgba(#000,0.5);
 			
 			font-size: .8rem;
 			text-transform: uppercase;
 			font-weight: 500;
-			opacity: .4;
-			letter-spacing: 2px;
+			// opacity: .4;
+			// letter-spacing: 2px;
 
 			// background-color: transparent;
 			// border: none;
