@@ -1,13 +1,13 @@
 {
-  "main.css": "/palette-pal/static/css/main.afb12a3d.chunk.css",
-  "main.js": "/palette-pal/static/js/main.add49b3c.chunk.js",
-  "main.js.map": "/palette-pal/static/js/main.add49b3c.chunk.js.map",
+  "main.css": "/palette-pal/static/css/main.ec3f3a5a.chunk.css",
+  "main.js": "/palette-pal/static/js/main.46fa4770.chunk.js",
+  "main.js.map": "/palette-pal/static/js/main.46fa4770.chunk.js.map",
   "static/js/1.0cd6058f.chunk.js": "/palette-pal/static/js/1.0cd6058f.chunk.js",
   "static/js/1.0cd6058f.chunk.js.map": "/palette-pal/static/js/1.0cd6058f.chunk.js.map",
   "runtime~main.js": "/palette-pal/static/js/runtime~main.9ea6b86b.js",
   "runtime~main.js.map": "/palette-pal/static/js/runtime~main.9ea6b86b.js.map",
-  "static/css/main.afb12a3d.chunk.css.map": "/palette-pal/static/css/main.afb12a3d.chunk.css.map",
+  "static/css/main.ec3f3a5a.chunk.css.map": "/palette-pal/static/css/main.ec3f3a5a.chunk.css.map",
   "index.html": "/palette-pal/index.html",
-  "precache-manifest.3304eb6645fdb45c10bd56e3c2209b73.js": "/palette-pal/precache-manifest.3304eb6645fdb45c10bd56e3c2209b73.js",
+  "precache-manifest.16ae5263541e26a86e9d07e057b42b29.js": "/palette-pal/precache-manifest.16ae5263541e26a86e9d07e057b42b29.js",
   "service-worker.js": "/palette-pal/service-worker.js"
 }
