@@ -11,6 +11,8 @@
 	padding: 2rem;
 	max-width: 1300px;
 	margin: auto;
+	position: relative;
+	z-index: 1000;
 }
 
 .swatch {
@@ -89,4 +91,43 @@
 	}
 
 
+}
+
+
+.flash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: inline-block;
+	// z-index: 1;
+	// z-index: 2000;
+	display: none;
+	// opacity: 0;
+	// transition: all .4s;
+	// background-color: red;
+	transform: translateY(-100%);
+	color: #fff;
+	font-size: 10rem;
+	font-weight: 700;
+	line-height: 100vh;
+	text-align: center;
+	
+	&.firing {
+		display: block;
+		animation: fire ease-in-out;
+		animation-iteration-count: 1;
+	}
+
+	@keyframes fire {
+		// 0% { opacity: .7; }
+		// 50% { opacity: 1; }
+		// 100% { opacity: 0; }
+
+		0% { transform: translateY(-100%) }
+		30% { transform: translateY(0%) }
+		80% { transform: translateY(0%) }
+		100% { transform: translateY(100%) }
+	}
 }

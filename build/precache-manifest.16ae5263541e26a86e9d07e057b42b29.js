@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/palette-pal/static/js/runtime~main.9ea6b86b.js"
   },
   {
-    "revision": "add49b3c7ff4b6fcd34e",
-    "url": "/palette-pal/static/js/main.add49b3c.chunk.js"
+    "revision": "46fa47709354a35cd4cc",
+    "url": "/palette-pal/static/js/main.46fa4770.chunk.js"
   },
   {
     "revision": "0cd6058fc3c24877ba89",
     "url": "/palette-pal/static/js/1.0cd6058f.chunk.js"
   },
   {
-    "revision": "add49b3c7ff4b6fcd34e",
-    "url": "/palette-pal/static/css/main.afb12a3d.chunk.css"
+    "revision": "46fa47709354a35cd4cc",
+    "url": "/palette-pal/static/css/main.ec3f3a5a.chunk.css"
   },
   {
-    "revision": "1c0a6a5225e8555cc128047a684753f8",
+    "revision": "f56ad19ad5181eaafc9791df64a446a4",
     "url": "/palette-pal/index.html"
   }
 ];

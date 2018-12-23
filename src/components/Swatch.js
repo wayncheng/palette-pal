@@ -37,56 +37,24 @@ class Swatch extends Component {
 		this.state = {};
 	}
 
-	handleClick = (event) => {
-		event.preventDefault();
-		const $t = event.target;
-		const $clipboard = document.getElementById('clipboard');
+	// handleClick = (event) => {
+	// 	event.preventDefault();
+	// 	const $t = event.target;
+	// 	const $clipboard = document.getElementById('clipboard');
 		
-		const colorData = $t.getAttribute('data-color');
-		console.log('colorData:',colorData);
+	// 	const colorData = $t.getAttribute('data-color');
+	// 	console.log('colorData:',colorData);
 
-		$clipboard.value = colorData;
-		$clipboard.select();
-		document.execCommand('copy');
+	// 	$clipboard.value = colorData;
+	// 	$clipboard.select();
+
+	// 	// copy selection
+	// 	document.execCommand('copy');
+	// 	// clear selection on the page
+	// 	document.getSelection().removeAllRanges();
 		
-		
-		// const $data = document.querySelector(`#${$t.id} .data`);
-		// $data.select(); // select data textarea
-		
-		
-
-		// copy selection
-		document.execCommand('copy');
-		// clear selection on the page
-		document.getSelection().removeAllRanges();
-		
-		// const selection = window.getSelection();
-		// const range = document.createRange();
-		// range.selectNodeContents($data);
-		// selection.removeAllRanges();
-		// selection.addRange(range);
-
-		// try {
-		// 	document.execCommand('copy');
-		// 	selection.removeAllRanges();
-
-		// 	// const original = $data.textContent;
-		// 	// $data.textContent = 'Copied!';
-		// 	// $data.classList.add('success');
-
-		// 	// setTimeout(() => {
-		// 	// 	$data.textContent = original;
-		// 	// 	$data.classList.remove('success');
-		// 	// }, 1200);
-		// } catch (e) {
-		// 	const errorMsg = document.querySelector('.error-msg');
-		// 	errorMsg.classList.add('show');
-
-		// 	setTimeout(() => {
-		// 		errorMsg.classList.remove('show');
-		// 	}, 1200);
-		// }
-	};
+	// 	alert(`Copied: ${colorData}`)
+	// };
 
 	render() {
 		let classification = 'dark';
@@ -98,13 +66,13 @@ class Swatch extends Component {
 			<div className="swatch">
 				<div
 					id={'swatch__' + this.props.id}
-					className={`content ${classification}`}
+					className={`swatch-target content ${classification}`}
 					assignment={this.props.id}
 					data-color={this.props.color}
 					style={{
 						backgroundColor: this.props.color
 					}}
-					onClick={this.handleClick}
+					// onClick={this.handleClick}
 				>
 					<span className="swatch-id">{this.props.id}</span>
 					<span className="data" name={this.props.id}>
